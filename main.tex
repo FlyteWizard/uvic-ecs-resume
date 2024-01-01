@@ -1,0 +1,158 @@
+% RESUME
+\documentclass{resume} 
+
+% Lipsum Generator
+\usepackage{lipsum}
+
+% DOCUMENT
+\begin{document}
+
+% FIRSTNAME LASTNAME
+% =======================================================
+\begin{namesection}
+    {FirstName LastName}
+\end{namesection}
+
+% CONTACT INFORMATION
+% =======================================================
+\begin{contactsection}
+    {Location}
+    {\href{mailto:firstname.lastname@university.ca}{firstname.lastname@university.ca}}
+    {\href{https://github.com/}{github.com/@username}}
+    {\href{https://www.linkedin.com/in/}{linkedin.com/in/@username}}
+\end{contactsection}
+
+% EDUCATION
+% =======================================================
+\begin{headersection}
+    {Education}
+\end{headersection}
+\begin{generalsection}
+    {University of University}
+    {MM YYYY - MM YYYY}
+    {Bachelor of Bachelor: Major Speciality and Minor Speciality | GPA X}
+    {Location}
+\end{generalsection}
+
+% EXPERIENCE
+% =======================================================
+\begin{headersection}
+    {Experience}
+    
+    \begin{itemsection}
+        {Business Company}
+        {MM YYYY - MM YYYY}
+        {Position}
+        {Location}
+
+        \item \lipsum[1][1]
+        \item \lipsum[2][4-7]
+    \end{itemsection}
+    \itemsectionskip
+    \begin{itemsection}
+        {Business Company}
+        {MM YYYY - MM YYYY}
+        {Position}
+        {Location}
+
+        \item \lipsum[5][1-3]
+        \item \lipsum[5][4-6]
+        \item \lipsum[1][4-7]
+    \end{itemsection}
+\end{headersection}
+
+% PROJECTS
+% =======================================================
+\begin{headersection}
+    {Projects}
+    
+    \begin{projectitemsection}
+        {Project}
+        {Role}
+        {\href{https://example.com}{example.com}}
+
+        \item \lipsum[9][3-4]
+        \item \lipsum[6][1-6]
+        \item \lipsum[1][7-9]
+    \end{projectitemsection}
+    \projectitemsectionskip
+    \begin{projectitemsection}
+        {Project}
+        {Role}
+        {\href{https://example.com}{example.com}}
+        
+        \item \lipsum[2][3-4]
+        \item \lipsum[10][1-6]
+        \item \lipsum[4][7-9]
+    \end{projectitemsection}
+\end{headersection}
+
+% COMPETENCIES
+% =======================================================
+\begin{headersection}
+    {Competencies}
+    
+    \renewcommand{\arraystretch}{1.25}
+    \begin{table}[!ht]
+        \begin{tabularx}{\textwidth}{>{\RaggedLeft}p{5em}*1{X}}
+         {\tableHeader{Technical}} & 
+            \lipsum[2][3-4] \\
+         {\tableHeader{General}} & 
+            \lipsum[8][3-6] \\
+         {\tableHeader{Language}} & 
+            \lipsum[4][10]
+        \end{tabularx}
+    \end{table}
+\end{headersection}
+
+% SUB PROJECTS
+% =======================================================
+\newpage
+\begin{headersection}
+    {Community Involvement}
+
+    \begin{subprojectitemsection}
+        {Title}
+        {Location}
+
+        \begin{subprojectitem}
+        {Position}
+        {MM YYYY}
+        
+            \item \lipsum[9][3-4]
+            \item \lipsum[6][1-6]
+            \item \lipsum[1][7-9]
+            \item \lipsum[3][10-12]
+        \end{subprojectitem}
+        \begin{subprojectitem}
+        {Position}
+        {MM YYYY}
+        
+            \item \lipsum[9][3-4]
+            \item \lipsum[8][7-9]
+        \end{subprojectitem}
+    \end{subprojectitemsection}
+    \subprojectitemsectionskip
+    \begin{subprojectitemsection}
+        {Title}
+        {Location}
+
+        \begin{subprojectitem}
+        {Position}
+        {MM YYYY}
+        
+            \item \lipsum[1][3-4]
+            \item \lipsum[5][1-6]
+        \end{subprojectitem}
+        \begin{subprojectitem}
+        {Position}
+        {MM YYYY}
+        
+            \item \lipsum[6][3-4]
+            \item \lipsum[3][7-9]
+            \item \lipsum[1][1-6]
+        \end{subprojectitem}
+    \end{subprojectitemsection}
+\end{headersection}
+
+\end{document}
